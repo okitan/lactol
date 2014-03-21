@@ -1,16 +1,13 @@
 # coding: utf-8
-lib = File.expand_path('../lib', __FILE__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'lactol/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "lactol"
-  spec.version       = Lactol::VERSION
+  spec.version       = File.read(File.join("VERSION", File.dirname(__FILE__))).chomp
   spec.authors       = ["okitan"]
   spec.email         = ["okitakunio@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = "web interface for thor executables"
+  spec.description   = "web interface for thor executables"
+  spec.homepage      = "https://github.com/okitan/lactol"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
