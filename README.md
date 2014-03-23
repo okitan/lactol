@@ -1,6 +1,6 @@
-# Lactol
+# Lactol [![Build Status](https://travis-ci.org/okitan/lactol.svg?branch=master)](https://travis-ci.org/okitan/lactol)
 
-TODO: Write a gem description
+rack application auto generated from thor command line tool
 
 ## Installation
 
