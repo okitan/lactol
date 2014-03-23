@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title =title
+  body
+    h2 assigned args
+    ul id="params"
+    - args.each do |key, value|
+      li name=key
+        = "#{key}: #{value}"
+    h2 output
+    pre id="out"
+      = out
+    h2 error output
+    pre id="err"
+      = err

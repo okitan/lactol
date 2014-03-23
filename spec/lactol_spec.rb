@@ -1,11 +1,5 @@
 require 'spec_helper'
 
 describe Lactol do
-  it 'should have a version number' do
-    Lactol::VERSION.should_not be_nil
-  end
-
-  it 'should do something useful' do
-    false.should be_true
-  end
+  specify { expect(described_class).to be_a(Module) }
 end

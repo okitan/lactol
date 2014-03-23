@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title =title
+  body
+    form method="post"
+      - unless mandatory_parameters.empty?
+        section#mandatory_parameters
+          h2 mandatory parameters
+          - mandatory_parameters.each do |name, param|
+            == render_option(name, param)
+            br
+      - unless optional_parameters.empty?
+        section#optional_parameters
+          h2 optional parameters
+          - optional_parameters.each do |name, param|
+            == render_option(name, param)
+            br
+      /! TODO: arity to set
+      input id="execute" type="submit" value="execute"
