@@ -4,13 +4,13 @@ html
     title =title
   body
     h2 assigned args
-    ul id="params"
+    ul#params
     - args.each do |key, value|
       li name=key
         = "#{key}: #{value}"
     h2 output
-    pre id="out"
-      = out
+    pre#result
+      = result
     h2 error output
-    pre id="err"
-      = err
+    pre#error
+      = error

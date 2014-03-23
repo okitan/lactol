@@ -63,14 +63,14 @@ describe Lactol::Server do
         fill_in "required_option", with: "hoge"
         find("#execute").click
 
-        expect(find("#out")).to have_content("executed")
+        expect(find("#result")).to have_content("executed")
       end
 
       it "shows stderr" do
         fill_in "required_option", with: "hoge"
         find("#execute").click
 
-        expect(find("#err")).to have_content("warning")
+        expect(find("#error")).to have_content("warning")
       end
     end
   end
